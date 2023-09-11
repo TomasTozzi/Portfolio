@@ -20,6 +20,8 @@ body{
     background-color: rgb(76, 59, 235);
     height: 10vh;
     color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 3;
 }
 
 .nav-container nav{
@@ -59,7 +61,7 @@ body{
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: #0c0e0f;
+    background: #4139af;
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -90,8 +92,6 @@ body{
     background-color: rgb(0, 0, 0, 0.60);
     
 }
-
-
 
 .h1-container h1{
     width: 60%;
@@ -174,9 +174,8 @@ body{
     padding-bottom:20vh ;        
 }
 
-.container-card{
+#container-card{
     display: flex;
-    border-radius: 2rem;
     gap: 40px;
     padding: 60px 30px;
     background-image: linear-gradient(135deg,
@@ -190,6 +189,35 @@ body{
     hsl(268, 78%, 26%) 100%);
 }
 
+.hvr-curl-bottom-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(197, 27, 27, 0);
+    position: relative;
+  }
+  .hvr-curl-bottom-right:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    /* IE9 */
+    background: linear-gradient(315deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+    box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+  }
+  .hvr-curl-bottom-right:hover:before, .hvr-curl-bottom-right:focus:before, .hvr-curl-bottom-right:active:before {
+    width: 25px;
+    height: 25px;
+  }
 
 .card-aboutme-p{
     display: flex;
@@ -200,8 +228,40 @@ body{
 }
 
 
-.container-card>img{
+#container-card>img{
     width: 50vh;
     border-radius: 50%;             
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    max-width: 350px;
+    background-color: rgb(241, 241, 241);
+    margin: 0 auto;
+    gap: 5px;
+}
+form>label>input{
+    margin-left:10px;
+    outline: none;
+    width: 76%;
+}
+
+form>label>textarea{
+    width: 99%;
+    outline: none;
+    padding: 5px 5px 70px 5px;
+}
+
+form>button{
+    background-color: #4139af;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+form>h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
