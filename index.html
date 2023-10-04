@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./estilos/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="css/hover.css" rel="stylesheet" media="all" />
     <link
@@ -19,57 +22,49 @@
       <nav>
         <ul>
           <li class="hvr-underline-from-center"><a href="#aboutme">Sobre Mi</a></li>
-          <li class="hvr-underline-from-center">Experencias</li>
+          <li class="hvr-underline-from-center">Experencia</li>
           <li class="hvr-underline-from-center"><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </div>
     <main>
-      <div class="container">
-      <div class="h1-container">
-        <h1>Programador Frontend</h1>
-        <p>
-          Me gusta desarrollar y maquetar sitios web de alta calidad brindando
-          el mejor servicio para mis clientes y una experiencia nitida al
-          usuario
-        </p>
-        <a>Descargue mi cv</a>
+      <div class="title-container">
+        <h1 class="title-font">Programador Frontend</h1>
       </div>
-      <div id="foto-h1"></div>
+      <div class="container-img-down-title flex">
+      <img src="./imagenes/pc.svg" alt="foto" class="img-down-title">
+      <p>
+        Me gusta desarrollar y maquetar sitios web de alta calidad brindando
+        el mejor servicio para mis clientes y una experiencia nitida al
+        usuario.
+      </p>
     </div>
-      <section id="aboutme" class="container-aboutme">
-        <img src="./imagenes/fotoperfil.jpg" />
-        <div>
-        <div id="descripcion-container-aboutme">
-            <h2>Sobre Mi</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
-              quos suscipit, hic esse ab eum magnam ad magni, distinctio, iure animi
-              adipisci consectetur earum! Perspiciatis, adipisci impedit. Esse,
-              molestiae ea.
-            </p>
-        </div>
-        <div id="tecnologias">
-        <h3>Tecnologias</h3>
-        <div class="iconos-primera-fila">
-          <p><i class="fa-brands fa-html5" style="color: #e51515;"></i>HTML</p>
-          <p><i class="fa-brands fa-css3-alt" style="color: #3ab6df;"></i>CSS</p>
-          <p><i class="fa-brands fa-square-js" style="color: #edf109;"></i>JavaScript</p>
-        </div>
-        <div class="iconos-segunda-fila">
-          <p><img id="MySQL" src="./imagenes/icons8-mysql-24.png" alt="MySQL">MySQL</p>
-          <p><img  id="scrum" src="./imagenes/equipo.png" alt="scrum">Scrum</p>
-        </div>
+    <img src="./imagenes/wave.svg" alt="wave">
+    <section class="mid-seccion-container flex" id="aboutme">
+      <div class="flex container-aboutme">
+      <h2 class="title-font">SOBRE MI</h2>
+      <p>Aca encontraras mas informacion sobre mi y las tecnologias que voy aprendiendo</p>
+    </div>
+    <div class="card-conocimientos  flex">
+      <img src="./imagenes/conocimientos.svg" alt="conocimientos" class="img-conocimientos">
+      <div class="info-conocimientos flex">
+        <h3 class="title-font">SKILLS</h3>
+        <div class="flex container-skills ">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JAVASCRIPT</div>
+          <div class="skill">GIT</div>
+          <div class="skill">GITHUB</div>
+          <div class="skill">MYSQL</div>
+          <div class="skill">TERMINAL</div>
+          <div class="skill">SCRUM</div>
+          <div class="skill">AGIL</div>
       </div>
-      </div>
-      </section>
-      <section></section>
-      <form id="contacto">
-        <h2>CONTACTAME</h2>
-        <label> Tu email:<input type="email" /> </label>
-        <label> Escribre tu mensaje:<textarea></textarea></label>
-        <button type="submit">Enviar</button>
-      </form>
+    </div>
+    </section>
+    <section class="container-proyectos">
+      
+    </section>
     </main>
   </body>
 </html>
