@@ -208,3 +208,56 @@ font-family: 'Overpass', sans-serif;
     max-width: 500px;
 }
 
+.form-content{
+align-items: center;
+justify-content: center;
+margin-top: 10%;
+}
+
+.container-form{
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    height: 560px;
+    padding: 50px 0px;
+    border-radius: 50% ;
+    background-color: #F2EDFE;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.datos{
+    flex-direction: column;
+    gap: 10px;
+    max-width: 50%;
+
+}
+
+
+textarea, .boton-form{
+    padding: 5px;
+    width: 50%;
+}
+
+input{
+    padding: 5px;
+    width: 100%;
+}
+
+footer{
+    background-color: #e3d8ff;
+    height: 300px;
+    margin-top: -20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content-footer{
+    background-color: rgb(185, 158, 255, 0.1);
+    border: 2px solid rgba(229, 228, 233, 0.1);
+    margin-top: 150px;
+    height: 150px;
+    width: 100%;
+}
